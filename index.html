@@ -28,37 +28,153 @@
         </ul>
       </header>
       <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <p>Control, simple, de asistencia, descentralizado, en X windows.</p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Notese estas 3 palabras:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<ul>
+<li>control</li>
+<li>simple</li>
+<li>asistencia
+Agrege esta palabra clave:</li>
+<li>descentralizado</li>
+</ul><p>Ningun sistema en el mercado es simple, que controle, y menos de asistencias; 
+esto es logico, no justifica el dinero que cobran las empresas.
+Ninguno es descentralizado, sino como se cobrarian las licencias o 
+en el mejor de los casos, tienen mucha depndencias en motores de base de datos 
+lo que ayuda a justificar consultoria y cobros en soporte tecnico externo.</p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<h2>
+<a name="complete-documentationdocumentaci%C3%B3n-completa" class="anchor" href="#complete-documentationdocumentaci%C3%B3n-completa"><span class="octicon octicon-link"></span></a>Complete Documentation/Documentación Completa</h2>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p><a href="https://github.com/mckaygerhard/simplecontrolasistencia/wiki">https://github.com/mckaygerhard/simplecontrolasistencia/wiki</a></p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<ul>
+<li>Available in english or spanish, Disponible en ingles o español. </li>
+<li>Main laguaje are spanish/Lenguaje principal es español.</li>
+</ul><h2>
+<a name="requeriments-instrucciones" class="anchor" href="#requeriments-instrucciones"><span class="octicon octicon-link"></span></a>Requeriments, instrucciones:</h2>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p><a href="https://github.com/mckaygerhard/simplecontrolasistencia/wiki/Requerimientos-Requeriments">https://github.com/mckaygerhard/simplecontrolasistencia/wiki/Requerimientos-Requeriments</a></p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<ul>
+<li>Available in english or spanish, Disponible en ingles o español. </li>
+</ul><h2>
+<a name="caracteristicas" class="anchor" href="#caracteristicas"><span class="octicon octicon-link"></span></a>Caracteristicas</h2>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<ul>
+<li>Tolerante a fallos, puede caerse o apagarse o tumbarse, 
+siempre levantara desde donde quedo, dado no depende de 
+un pesado y estupido motor externo de base de datos, abstrayendo 
+su simplicidad al maximo. Al pasar un dia se cierra si se intenta registrar algo.</li>
+<li>Guarda en base de datos local, lo qu lo hace simple, 
+dado implica que cualquier imbecil en el sitio puede inicarsele 
+si no dipone de internet o red, que copie el archvio y lo entrege, 
+sea por correo, por usbdrive, o clocandolo en una intranet.</li>
+<li>Trabaja autonomamente, independiente de sistema central, 
+lo que significa que siempre seguira funcionando, no importando 
+si nadie le da mantenimiento, seguira administrandose solo, guardando 
+el historico dia por dia en bases de datos independientes, segun los 
+datos de usuarios/trabajadores sin excusas por parte de estos, 
+ya que algun dia se revisaran estos registros.</li>
+</ul><h2>
+<a name="componentes" class="anchor" href="#componentes"><span class="octicon octicon-link"></span></a>Componentes</h2>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>1) escanerdedo</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<p>Linea de comandos, actua como capturador de la huella dactilar, 
+es el principal componente, si bien no el mas usable y comodo; 
+captura la huella, asi como verifica la misma, esto siempre 
+informa de las operaciones realizadas a la salida estandar/error.</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>2) interfaztomarasistencia</p>
+
+<p>Cliente grafico, programa que maneja ordenadamente segun la captura dactilar, 
+es el componente que interactua con el usuario/trabajador, con opcion de foto; 
+emplea la linea de comandos, y opcionalmente un camara web para auditar como opcion; 
+toma la foto y la data de la huella dactilar mediante la informacion 
+que le suministra la linea de comandos, y la administra en DB local interna, 
+el usuario siempre mete su id (o este se toma de un codigo de barras), 
+y mediante esto busca en la DB, y con la data en su lugar verifica segun el id.
+Si no hay escaner, usa la camara en modo emergencia, sin escusas, 
+si no hay carnet con codigo de barras, puede ingresar el id manuealmente, 
+permitiendo que el proceso de asistencia nunca se detenga.</p>
+
+<p>3) administradorasistencia</p>
+
+<p>Interfaz grafica, los datos del cliente grafico se envian a un nodo, 
+en este nodo estara un servicio de base de datos postgres/mariadb, y 
+un programa grafico que toma los archivos exportados y lo procesa dentro, 
+este programa emite reportes simples y prepara expotaciones hacia otros sistemas.
+De este hay dos, la web, y la escritorio, solo la escritorio maneja ingresos 
+con todas las caracteristicas, y solo la web maneja administracion con todas 
+las caracteristicas.</p>
+
+<h1>
+<a name="estatus" class="anchor" href="#estatus"><span class="octicon octicon-link"></span></a>Estatus:</h1>
+
+<p>Listo:</p>
+
+<ul>
+<li>linea de comandos, modo emulado y retorno de infomacion en toda operacion.</li>
+<li>Interfaz de asistencia, terminado 90%, falta lectura de codigo de barra y replicacion</li>
+</ul><p>Por terminar:</p>
+
+<ul>
+<li>interfaz grafica, modo replicacion y lectura de barras</li>
+<li>interfaz adminisracion: solo esta listo los reportes detallados, el resto falta</li>
+</ul><h1>
+<a name="requirementsrequisitos" class="anchor" href="#requirementsrequisitos"><span class="octicon octicon-link"></span></a>Requirements/Requisitos</h1>
+
+<h2>
+<a name="software-requirements--requisitos-de-software" class="anchor" href="#software-requirements--requisitos-de-software"><span class="octicon octicon-link"></span></a>Software requirements / requisitos de software:</h2>
+
+<p>os:</p>
+
+<ul>
+<li>debian, venos o arch, sin multiarch o sin multiarquitectura</li>
+<li>linux, kernel 2.6.30 como minimo con soporte v4l2</li>
+</ul><p>linea de comandos:</p>
+
+<ul>
+<li>libc6 &gt;= 2.6.3</li>
+<li>libfprint &gt;= 0.5.0</li>
+</ul><p>interfaz grafica:</p>
+
+<ul>
+<li>gambas3 &gt;= 3.4.0</li>
+<li>libfprint &gt;= 0.5.0</li>
+<li>bash &gt;= 3.1</li>
+<li>v4l2</li>
+<li>gstreamer &gt;= 0.10.29</li>
+<li>sqlite &gt;= 3.5</li>
+<li>archivo dummy en /tmp</li>
+</ul><p>interfa administrativa</p>
+
+<ul>
+<li>postgresql &gt;= 9.1</li>
+<li>bash &gt;= 3.1</li>
+</ul><h2>
+<a name="hardware-requirements" class="anchor" href="#hardware-requirements"><span class="octicon octicon-link"></span></a>hardware requirements:</h2>
+
+<ul>
+<li>cpu x86: intel o geode x86, se uso especialmente un daruma MT1000</li>
+<li>escaner dactilar (escaner finger print), preferible U.are.U serie 4XXX</li>
+<li>camara web, cualquier camara compatible con v4l2 solamente</li>
+</ul><h2>
+<a name="instalacion" class="anchor" href="#instalacion"><span class="octicon octicon-link"></span></a>Instalacion</h2>
+
+<p>en la raiz del proyecto:
+make all
+esto colocara el comando backend y la interfaz en la raiz</p>
+
+<p>para usarlos, el comendo backend autodetecta el hardware, si no hay hardware, lo emula
+la interfaz autodetecta camara y su backend, si algo falla lo deberia notificar.</p>
+
+<p>la interfaz llama el backend comando en /usr/bin, sino en su raiz de proyecto, 
+la interfaz llama el backend y trata de escanear la huella, al mismo tiempo que tira una foto, 
+el dispositivo al escanear la huella crea los ficheros y la interfaz los manipula,
+verifica la ruta, y si esta en modo emulacion creo no crea el directorio asi que revisar esto.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/mckaygerhard">mckaygerhard</a></p>
