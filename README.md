@@ -1,12 +1,86 @@
 Simple Control de Asistencia
 ============================
 
-Web page: http://mckaygerhard.github.io/simplecontrolasistencia
+Simple, control asistence system for X windows, descentralized
+Control, simple, de asistencia, descentralizado, en X windows descentralizado.
 
-Introduccion y descripcion
+older web : http://mckaygerhard.github.io/simplecontrolasistencia Please use newer web below:
+
+Updates and real lasted info: http://www.gambas-es.org/viewtopic.php?f=5&t=3484 Actualizaciones en ese link
+
+**Interfaz administrativa asistencia 1.0.X**
+
+![foto administrativo] (http://www.gambas-es.org/files/thumbs/2313/sistema_asistencia_admin_1.png)  _  ![foto admin consulta] (http://www.gambas-es.org/files/thumbs/2313/sistema_asistencia_admin_2.png)
+
+**Interfaz tomar asistencia 1.3.X**
+
+![foto interfaz] (http://www.gambas-es.org/image_thumbnail.php?pic_id=http%3A%2F%2Fwww.gambas-es.org%2Ffiles%2Fimages%2F2313%2Finterfaz_asistencia.jpeg "interfaz asistencia .jpg")
+
+Requisitos e instalacion
+=======================
+
+Requeriments, instrucciones:
 --------------------------
 
-Control, simple, de asistencia, descentralizado, en X windows.
+Spanish or english:
+
+* https://github.com/mckaygerhard/simplecontrolasistencia/wiki/Requerimientos-Requeriments
+
+
+requisitos de software:
+-----------------------
+
+os:
+* VenenuX GNU/linux, (debian opcional sin multiarch o sin multiarquitectura), VenOS Linux
+* linux, kernel 2.6.28 como minimo con soporte v4l2
+
+linea de comandos:
+* libc6 >= 2.6.3
+* libfprint >= 0.5.0
+
+interfaz grafica:
+* gambas3 >= 3.4.0
+* libfprint >= 0.5.0
+* bash >= 3.1
+* v4l2
+* gstreamer >= 0.10.29
+* sqlite >= 3.5
+* archivo dummy en /tmp
+
+interfa administrativa
+* postgresql >= 9.1
+* bash >= 3.1
+
+
+requisitos de hardware:
+-----------------------
+
+* cpu x86: intel o geode x86, se uso especialmente un daruma MT1000
+* escaner dactilar (escaner finger print), preferible U.are.U serie 4XXX
+* camara web, cualquier camara compatible con v4l2 solamente
+
+
+Instalacion
+-----------
+
+en la raiz del proyecto:
+make all
+esto colocara el comando backend y la interfaz en la raiz
+
+para usarlos, el comendo backend autodetecta el hardware, si no hay hardware, lo emula
+la interfaz autodetecta camara y su backend, si algo falla lo deberia notificar.
+
+la interfaz llama el backend comando en /usr/bin, sino en su raiz de proyecto, 
+la interfaz llama el backend y trata de escanear la huella, al mismo tiempo que tira una foto, 
+el dispositivo al escanear la huella crea los ficheros y la interfaz los manipula,
+verifica la ruta, y si esta en modo emulacion creo no crea el directorio asi que revisar esto.
+
+More info/Mas info
+==================
+
+Main laguaje are spanish/Lenguaje principal es español.
+
+* https://github.com/mckaygerhard/simplecontrolasistencia/wiki
 
 Notese estas 3 palabras:
 * control
@@ -21,25 +95,7 @@ Ninguno es descentralizado, sino como se cobrarian las licencias o
 en el mejor de los casos, tienen mucha depndencias en motores de base de datos 
 lo que ayuda a justificar consultoria y cobros en soporte tecnico externo.
 
-
-More info/Mas info
-------------------
-
 En la wiki, tambien resumido en este archivo:
-
-Main laguaje are spanish/Lenguaje principal es español.
-
-* https://github.com/mckaygerhard/simplecontrolasistencia/wiki
-
-LEER COMPLETO EL ENLACE ANTES DE SEGUIR.
-
-
-Requeriments, instrucciones:
---------------------------
-
-Estan en la wiki, tambien un resumen al final de este archivo:
-
-* https://github.com/mckaygerhard/simplecontrolasistencia/wiki/Requerimientos-Requeriments
 
 
 Caracteristicas
@@ -88,7 +144,7 @@ que el proceso de asistencia nunca se detenga.
 
 3) administradorasistencia
 
-Interfaz (web?) grafica, los datos del cliente grafico se envian a un nodo, 
+Interfaz grafica, los datos del cliente grafico se envian a un nodo, 
 en este nodo estara un servicio de base de datos postgres/mariadb, y 
 un programa grafico que toma los archivos exportados y lo procesa dentro, 
 este programa emite reportes simples y prepara expotaciones hacia otros sistemas.
@@ -106,53 +162,3 @@ Por terminar:
 * interfaz adminisracion: falta todo, pero el sistema puede funcionar sin el exportando a saint a mano.
 
 
-Requisitos e instalacion
-=======================
-
-requisitos de software:
------------------------
-
-os:
-* debian, venos o arch, sin multiarch o sin multiarquitectura
-* linux, kernel 2.6.30 como minimo con soporte v4l2
-
-linea de comandos:
-* libc6 >= 2.6.3
-* libfprint >= 0.5.0
-
-interfaz grafica:
-* gambas3 >= 3.4.0
-* libfprint >= 0.5.0
-* bash >= 3.1
-* v4l2
-* gstreamer >= 0.10.29
-* sqlite >= 3.5
-* archivo dummy en /tmp
-
-interfa administrativa
-* postgresql >= 9.1
-* bash >= 3.1
-
-
-requisitos de hardware:
------------------------
-
-* cpu x86: intel o geode x86, se uso especialmente un daruma MT1000
-* escaner dactilar (escaner finger print), preferible U.are.U serie 4XXX
-* camara web, cualquier camara compatible con v4l2 solamente
-
-
-Instalacion
------------
-
-en la raiz del proyecto:
-make all
-esto colocara el comando backend y la interfaz en la raiz
-
-para usarlos, el comendo backend autodetecta el hardware, si no hay hardware, lo emula
-la interfaz autodetecta camara y su backend, si algo falla lo deberia notificar.
-
-la interfaz llama el backend comando en /usr/bin, sino en su raiz de proyecto, 
-la interfaz llama el backend y trata de escanear la huella, al mismo tiempo que tira una foto, 
-el dispositivo al escanear la huella crea los ficheros y la interfaz los manipula,
-verifica la ruta, y si esta en modo emulacion creo no crea el directorio asi que revisar esto.
